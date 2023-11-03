@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pre-Register for BASIS X BLACKOUT</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.imgur.com/nwoDBxv.jpg');
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        #logo {
+            width: 100px; /* Adjust as needed */
+            height: auto;
+        }
+        input[type="email"] {
+            width: 300px;
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        #register-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: #ffffff;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="logo" src="https://i.imgur.com/38FLzc4.png" alt="Logo" style="width: 200px;" />
+<b><b></b></b>
+		&nbsp;
+		&nbsp;
+		&nbsp;
+		
+        <p>PRE-REGISTER TO BE THE FIRST TO RECEIVE ACCESS TO THE NEXT BASIS X BLACKOUT: BELOW</p>
+        <form id="registration-form">
+            <input type="email" id="email" placeholder="Enter your email address" required>
+            <button type="submit" id="register-btn">Register</button>
+        </form>
+		&nbsp;
+		
+        <p style="font-size: 10px;">
+            By submitting your e-mail address to BASIS & Blackout, you agree to receive updates about BELOW through e-mail.
+        </p>
+    </div>
+
+    <script>
+        document.getElementById('registration-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+
+            // Get the email value
+            const email = document.getElementById('email').value;
+
+<form id="registration-form">
+    <input type="email" id="email" placeholder="Enter your email address" required>
+    <button type="submit" id="register-btn">Register</button>
+</form>
+
+<script>
+document.getElementById('registration-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const email = document.getElementById('email').value;
+
+    fetch('https://script.google.com/macros/s/AKfycbxmaLuhDmdsp8u5v35QUucLROrWcUbPTwa21exNsCd_6dca9M1eYdox2hmLX-j_J3TuPA/exec', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: 'email=' + encodeURIComponent(email)
+    })
+    .then(response => {
+        // Handle the response (optional)
+        console.log('Email submitted:', email);
+    })
+    .catch(error => {
+        // Handle errors (optional)
+        console.error('Error:', error);
+    });
+});
+</script>
+
+</body>
+</html>
+
